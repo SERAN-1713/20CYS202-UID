@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon"
+        href="">
+    <title>Anokha Techfest </title>
+    <meta charset="UTF-18">
+    <link rel="icon" type="image/x-icon" href="https://wallpaperaccess.com/full/1803504.png">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+</head>
+<style>
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  border-color: black;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 0px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1524657049226-51f8180e28b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: transparent;
+  color: white;
+}
+
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+  
+}
+
+li:last-child {
+    padding: 14px 16px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: lightgray;
+}
+
+.active {
+  background-color: lightgray;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:transparent;
+   color: white;
+   text-align: center;
+}
+
+</style>
+
+<body >
+    
+    <ul>
+      <li><a href="C:\Users\Seran\Desktop\anokha\anokha.html" style="color:floralwhite;">Home</a></li>
+  <li><a href="C:\Users\Seran\Desktop\anokha\events.html" style="color:floralwhite;">Events</a></li>
+  <li style="border-right:1px solid #bbb;"><a href="C:\Users\Seran\Desktop\anokha\gallery.html" style="color:floralwhite;">Gallery</a></li>
+  <li class="active" style="border-right:1px solid #bbb;"><a href="" style="color:black;">Register</a></li>
+  <li style="float:right;color:floralwhite;margin-top: 16px;text-align: center; padding: 14px 16px;border-right:1px solid #bbb;">Login</li>
+  <li style="float:right;color:floralwhite;margin-top: 16px;text-align: center; padding: 14px 16px;border-right: 1px solid #bbb;
+">Sign up </li>
+  </ul>
+
+
+ <center style="font-family:Kanit;"><h1 style="color:floralwhite;">REGISTERATION</h1>
+
+
+<form action="/action_page.php">
+  <label for="fname" style="color:floralwhite;">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname" style="color:floralwhite;">Last name:</label>
+  <input type="text" id="lname" name="lname"><br>
+  
+  <p style="color:floralwhite;">Upload your ID CARD as pdf/png:
+
+<form action="/action_page.php">
+<input type="file" id="myFile" name="filename"></p>
+
+  <p style="color:floralwhite;">Gender:
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1" style="color:floralwhite;">MALE</label>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2" style="color:floralwhite;">FEMALE</label><br></p>
+
+  <label for="birthday" style="color:floralwhite;">Date of Birth:</label>
+  <input type="date" id="birthday" name="birthday">
+  
+
+<tr>
+<td><h4 style="font-family:arial;color: floralwhite;">Event Participating:
+<td> <select id="events" name="events">
+  <option value="hackathon">Select</option>
+    <option value="hackathon">HACKATHON</option>
+    <option value="codeking">CODE MASTER</option>
+    <option value="techquiz">TECH QUIZ</option>
+    <option value="CTF">CTF</option>
+  </select></h4></td>
+</tr>
+  <tr>
+<td> <h4 style="font-family:verdana;color: floralwhite;">Subscribe To Our Newsletter </h4> </td>
+  <td><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></td><br><br>
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1" style="color:floralwhite;">I am agreeing to all the terms and conditions</label><br><br>
+<button onclick="myFunction()">SUBMIT</button>
+
+<script>
+function myFunction() {
+  alert("I confirm all the detailas are legitimate and accept to submit all the details");
+}
+</script>
+</form>
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
